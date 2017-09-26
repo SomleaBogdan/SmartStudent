@@ -29,6 +29,11 @@
 		43AA05B01F7AA10000EFF276 /* discounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05AF1F7AA10000EFF276 /* discounts.json */; };
 		43AA05B31F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA05B11F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.swift */; };
 		43AA05B41F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05B21F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.xib */; };
+		43AA05B61F7AAF1D00EFF276 /* RSACustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA05B51F7AAF1D00EFF276 /* RSACustomCollectionViewLayout.swift */; };
+		43AA05B91F7AB40700EFF276 /* SMSTPartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA05B71F7AB40700EFF276 /* SMSTPartnersViewController.swift */; };
+		43AA05BA1F7AB40700EFF276 /* SMSTPartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05B81F7AB40700EFF276 /* SMSTPartnersViewController.xib */; };
+		43AA05BD1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA05BB1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift */; };
+		43AA05BE1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05BC1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		43AA05AF1F7AA10000EFF276 /* discounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = discounts.json; path = ../discounts.json; sourceTree = "<group>"; };
 		43AA05B11F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMSTDiscountsTableViewCell.swift; path = ../SMSTDiscountsTableViewCell.swift; sourceTree = "<group>"; };
 		43AA05B21F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SMSTDiscountsTableViewCell.xib; path = ../SMSTDiscountsTableViewCell.xib; sourceTree = "<group>"; };
+		43AA05B51F7AAF1D00EFF276 /* RSACustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSACustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		43AA05B71F7AB40700EFF276 /* SMSTPartnersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTPartnersViewController.swift; sourceTree = "<group>"; };
+		43AA05B81F7AB40700EFF276 /* SMSTPartnersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMSTPartnersViewController.xib; sourceTree = "<group>"; };
+		43AA05BB1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTAboutUsViewController.swift; sourceTree = "<group>"; };
+		43AA05BC1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMSTAboutUsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,8 @@
 		43AA05831F7A527700EFF276 /* AboutScreen */ = {
 			isa = PBXGroup;
 			children = (
+				43AA05BB1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift */,
+				43AA05BC1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib */,
 			);
 			path = AboutScreen;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 		43AA05871F7A527700EFF276 /* VouchersScreen */ = {
 			isa = PBXGroup;
 			children = (
+				43AA05B51F7AAF1D00EFF276 /* RSACustomCollectionViewLayout.swift */,
 			);
 			path = VouchersScreen;
 			sourceTree = "<group>";
@@ -214,6 +227,8 @@
 		43AA058A1F7A527700EFF276 /* PartnersScreen */ = {
 			isa = PBXGroup;
 			children = (
+				43AA05B71F7AB40700EFF276 /* SMSTPartnersViewController.swift */,
+				43AA05B81F7AB40700EFF276 /* SMSTPartnersViewController.xib */,
 			);
 			path = PartnersScreen;
 			sourceTree = "<group>";
@@ -296,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43AA05761F7A511A00EFF276 /* LaunchScreen.storyboard in Resources */,
+				43AA05BA1F7AB40700EFF276 /* SMSTPartnersViewController.xib in Resources */,
 				43AA059E1F7A79A800EFF276 /* SMSTApplySmartCardViewController.xib in Resources */,
 				43AA059A1F7A797300EFF276 /* SMSTDiscountsViewController.xib in Resources */,
 				43AA05AA1F7A8D5B00EFF276 /* SMSTMoreTableViewCell.xib in Resources */,
@@ -303,6 +319,7 @@
 				43AA05B41F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.xib in Resources */,
 				43AA05A61F7A7A2B00EFF276 /* SMSTMoreViewController.xib in Resources */,
 				43AA05961F7A555600EFF276 /* SMSTHomeViewController.xib in Resources */,
+				43AA05BE1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib in Resources */,
 				43AA05A21F7A79DC00EFF276 /* SMSTNotificationsViewController.xib in Resources */,
 				43AA05AC1F7A91DD00EFF276 /* Assets.xcassets in Resources */,
 				43AA05B01F7AA10000EFF276 /* discounts.json in Resources */,
@@ -318,11 +335,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				43AA05B31F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.swift in Sources */,
+				43AA05B61F7AAF1D00EFF276 /* RSACustomCollectionViewLayout.swift in Sources */,
 				43AA05A51F7A7A2B00EFF276 /* SMSTMoreViewController.swift in Sources */,
 				43AA05A91F7A8D5B00EFF276 /* SMSTMoreTableViewCell.swift in Sources */,
+				43AA05B91F7AB40700EFF276 /* SMSTPartnersViewController.swift in Sources */,
 				43AA05991F7A797300EFF276 /* SMSTDiscountsViewController.swift in Sources */,
 				43AA058E1F7A54A300EFF276 /* SMSTMainTabbarViewController.swift in Sources */,
 				43AA05921F7A54ED00EFF276 /* UIColor.swift in Sources */,
+				43AA05BD1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift in Sources */,
 				43AA05951F7A555600EFF276 /* SMSTHomeViewController.swift in Sources */,
 				43AA059D1F7A79A800EFF276 /* SMSTApplySmartCardViewController.swift in Sources */,
 				43AA056C1F7A511A00EFF276 /* AppDelegate.swift in Sources */,

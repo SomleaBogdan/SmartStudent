@@ -55,8 +55,11 @@ extension SMSTMoreViewController: UITableViewDelegate {
         } else if obj["id"] as? Int == 1 {
 
         } else if obj["id"] as? Int == 2 {
-
+            let partnersViewController = SMSTPartnersViewController(nibName: "SMSTPartnersViewController", bundle: nil)
+            self.navigationController?.pushViewController(partnersViewController, animated: true)
         } else if obj["id"] as? Int == 3 {
+            let aboutUsViewController = SMSTAboutUsViewController(nibName: "SMSTAboutUsViewController", bundle: nil)
+            self.navigationController?.pushViewController(aboutUsViewController, animated: true)
 
         } else if obj["id"] as? Int == 4 {
             

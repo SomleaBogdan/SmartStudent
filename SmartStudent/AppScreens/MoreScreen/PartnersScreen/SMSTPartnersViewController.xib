@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMSTPartnersViewController" customModule="SmartStudent" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwQ-gS-ZcL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Hai sa fim parteneri!
+</string>
+                            <attributes>
+                                <font key="NSFont" size="14" name=".SFNSText-Bold"/>
+                                <font key="NSOriginalFont" size="14" name=".SFNSText-Bold"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <mutableString key="content">
+Creşte-ţi vânzările printr-un parteneriat cu SmartStudent!
+Ajungeti la 7.000 de studenti si elevi, doar prin simpla oferire de avantaje pentru posesori de legitimatii Smart StudentCard si Smart StudentCard Junior.
+
+Creste ti profitul dumneavoastra in comunitatea studentilor!
+Oferind reduceri si beneficii pentru studenti si elevi inseamna ca puteti incepe sa:
+1. construiti renumele unei afaceri;
+2. sa atrageti noi clienti;
+Beneficiile Smartstudent – produsele si serviciile dumneavoastra – sunt promovate prin diferite forme de marketing(site, Facebook), vizand mii de studenti si elevi.
+
+Construiti-va imaginea brand-ului
+Parteneriatul cu SmartStudent va transmite o serie de lucruri pozitive despre compania si serviciile dumneavoastra:
+• Ca tratati cu interes studentii si ca va pasa de acestia;
+• Ca sunteti asociati cu o organizatie respectata, care a adus un aport benefic in randul studentilor si elevilor, asociatie sprijinita de Primaria Municipiului Tirgu Mures.
+
+100% pentru elevi si studenti
+Va putem garanta ca beneficiile pe care le acordati posesorilor de SmartCard-uri sunt oferite doar elevilor si studentilor, deoarece, prin procesul e eliberare a unui card, noi, SmartStudent verificam daca carnetul de elev/ student este valabil pentru annul in curs, inainte de printarea unui card, acest card ridicandu-se doar personal de catre elevul/studentul care doreste sa fie membru SmartStudent. Toate cardurile eliberate de SmartStudent au un numar de serie unic, stocat in baza noastra de date.
+
+Un parteneriat cu SmartStudent:
+1. Ofera publicitate printr-un mediu on-line de cautare a reducerilor si va pozitioneaza pe site-ul nostru local
+2. Va poate face cunoscuta anual firma sau afacerea dumneavoastra pentru aproape 7.000 de posesori in Targu Mures.
+
+3. Este risc scazut
+4. Va bucurati de de beneficiile publicitatii gratuite pe site-ul nostru
+5. Posesorii cardurilor noastre pot cauta reduceri dupa categoria ofertelor potrivite pentru ei.
+6. Atunci cand un membru da clic pe oferta dvs, va fi afisata o descriere detaliata. Acest lucru va permite distingerea afacerii dvs. de cea a concurentei. Putem adauga, fara nici un cost, un link catre site-ul dumneavoastra.
+
+Proiectul SmartStudent pentru parteneri este simplu:
+1. Decideti ce reducere vreti sa oferiti pentru a atrage studentii.
+2. Contacteaza-ne pentru a stabilii termenii acordului.
+3. Oferiti-ne logo-ul dvs. si alte informatii pentru a ajuta posesorii de carduri sa va gaseasca si sa va contacteze cu usurinta
+4. Enjoy SmartStudent!
+
+</mutableString>
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">Partenerii noştri
+</string>
+                            <attributes>
+                                <font key="NSFont" size="14" name=".AppleSystemUIFontEmphasized"/>
+                                <font key="NSOriginalFont" size="14" name=".AppleSystemUIFontEmphasized"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+ii gasesti la sectiunile Vouchere si Reduceri si le multumim ca sunt alaturi de noi in fiecare an!</string>
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LwQ-gS-ZcL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5pN-WY-dkQ"/>
+                <constraint firstAttribute="trailing" secondItem="LwQ-gS-ZcL" secondAttribute="trailing" id="SQ6-4l-rKw"/>
+                <constraint firstAttribute="bottom" secondItem="LwQ-gS-ZcL" secondAttribute="bottom" id="jeP-x5-cav"/>
+                <constraint firstItem="LwQ-gS-ZcL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yss-Op-83b"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
