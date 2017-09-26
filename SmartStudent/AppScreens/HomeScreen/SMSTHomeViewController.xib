@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMSTHomeViewController" customModule="SmartStudent" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="09W-lJ-RpS" id="NfD-f5-luW"/>
+                <outlet property="tvcCinemaArta" destination="Ytr-yT-6jh" id="OYW-tR-3rx"/>
+                <outlet property="tvcTeatrulNational" destination="bi8-xY-sb6" id="xvi-2U-pm0"/>
+                <outlet property="tvcUndeIesim" destination="yut-wc-ymi" id="ngJ-hH-E4B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="09W-lJ-RpS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="09W-lJ-RpS" secondAttribute="trailing" id="3IL-ED-ZmA"/>
+                <constraint firstAttribute="bottom" secondItem="09W-lJ-RpS" secondAttribute="bottom" id="56I-Oe-jym"/>
+                <constraint firstItem="09W-lJ-RpS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pr9-Qu-lpc"/>
+                <constraint firstItem="09W-lJ-RpS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WJC-L4-h9d"/>
+            </constraints>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="Ytr-yT-6jh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ytr-yT-6jh" id="vly-gG-HWA">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tt-8q-fby">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                        <string key="text">In cazul in care nu stii ce sa faci in aceasta seara, Cinema Arta Tirgu-Mures, iti ofera o lista a celor mai noi filme care ruleaza in cinematograf. Iti vindem si un pont: in zilele de miercuri, pretul unui bilet la un film 2D este de doar 8 lei!
+Iti dorim vizionare placuta!</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3tt-8q-fby" firstAttribute="leading" secondItem="vly-gG-HWA" secondAttribute="leading" id="LLu-Xo-SJv"/>
+                    <constraint firstItem="3tt-8q-fby" firstAttribute="top" secondItem="vly-gG-HWA" secondAttribute="top" id="aXW-3y-Ygr"/>
+                    <constraint firstAttribute="bottom" secondItem="3tt-8q-fby" secondAttribute="bottom" id="fUX-aA-qu8"/>
+                    <constraint firstAttribute="trailing" secondItem="3tt-8q-fby" secondAttribute="trailing" id="kDC-UX-eXN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="496.5" y="-212"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="bi8-xY-sb6">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bi8-xY-sb6" id="qXZ-vx-IF8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7f-ow-Tx9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                        <string key="text">Daca iti doresti o seara culturala ca la carte, iti recomandam alegerea unei reprezentatii care se desfasora la Teatrul Naţional Tîrgu-Mureş.
+Iti dorim vizionare placuta!</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="E7f-ow-Tx9" secondAttribute="trailing" id="LVu-b5-q9p"/>
+                    <constraint firstItem="E7f-ow-Tx9" firstAttribute="top" secondItem="qXZ-vx-IF8" secondAttribute="top" id="OgZ-WU-SRX"/>
+                    <constraint firstAttribute="bottom" secondItem="E7f-ow-Tx9" secondAttribute="bottom" id="je9-A7-LhU"/>
+                    <constraint firstItem="E7f-ow-Tx9" firstAttribute="leading" secondItem="qXZ-vx-IF8" secondAttribute="leading" id="vdw-3Z-wTH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="497" y="-47"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="yut-wc-ymi">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yut-wc-ymi" id="KS4-sj-Hkj">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nY-81-PKD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                        <string key="text">Siteul unde gasesti articole care descriu evenimentele care vor avea loc in orasul nostru este outinmures.ro. Sfatul nostru este sa-i urmaresti sa fii la curent cu ultimele evenimente.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6nY-81-PKD" firstAttribute="top" secondItem="KS4-sj-Hkj" secondAttribute="top" id="M9k-Rd-mca"/>
+                    <constraint firstItem="6nY-81-PKD" firstAttribute="leading" secondItem="KS4-sj-Hkj" secondAttribute="leading" id="TmB-xe-tHT"/>
+                    <constraint firstAttribute="bottom" secondItem="6nY-81-PKD" secondAttribute="bottom" id="Y5R-RH-lZI"/>
+                    <constraint firstAttribute="trailing" secondItem="6nY-81-PKD" secondAttribute="trailing" id="u0N-QI-Lh9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="497" y="114"/>
+        </tableViewCell>
+    </objects>
+</document>

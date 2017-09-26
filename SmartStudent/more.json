@@ -1,0 +1,33 @@
+[
+ [
+  {"id":0,
+  "title":"Reduceri",
+  "image_name":"discount_icon",
+  "action":"open_discount"},
+  {"id":1,
+  "title":"Vouchere",
+  "image_name":"coupon_icon",
+  "action":"open_voucher"},
+  {"id":2,
+  "title":"Evenimente",
+  "image_name":"event_icon",
+  "action":"open_events"},
+  {"id":3,
+  "title":"Parteneriate",
+  "image_name":"partner_icon",
+  "action":"open_partner"}
+  ],
+ [{"id":4,
+  "title":"Despre SmartStudent",
+  "image_name":"about_us_icon",
+  "action":"open_about_us"},
+  {"id":5,
+  "title":"FAQ",
+  "image_name":"faq_icon",
+  "action":"open_faq"},
+  {"id":6,
+  "title":"Contact",
+  "image_name":"contact_icon",
+  "action":"open_contact"}
+  ]
+ ]
