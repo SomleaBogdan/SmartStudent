@@ -31,8 +31,7 @@ class SMSTApplySmartCardViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "SMSTFormTextfieldTableViewCell", bundle: nil), forCellReuseIdentifier: "textFieldCell")
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 60
+        self.tableView.rowHeight = 44
     }
 
     public func createCellAt(index: IndexPath) -> UITableViewCell? {
@@ -41,7 +40,7 @@ class SMSTApplySmartCardViewController: UIViewController {
         if type == "text" || type == "numeric" || type == "date" || type == "email" || type == "dropdown" || type == "phone" {
             //create text cell
             let tableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "textFieldCell", for: index) as! SMSTFormTextfieldTableViewCell
-            tableViewCell.lblTitle.text = obj["title"] as? String
+            tableViewCell.tfValue.placeholder = obj["title"] as? String
             if type == "numeric" {
                 tableViewCell.tfValue.keyboardType = .numberPad
             } else if type == "email" {
@@ -49,6 +48,7 @@ class SMSTApplySmartCardViewController: UIViewController {
             } else if type == "phone" {
                 tableViewCell.tfValue.keyboardType = .phonePad
             }
+            return tableViewCell
         }
         return UITableViewCell()
     }

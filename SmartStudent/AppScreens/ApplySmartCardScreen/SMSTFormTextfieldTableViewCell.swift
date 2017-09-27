@@ -10,7 +10,6 @@ import UIKit
 
 class SMSTFormTextfieldTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var tfValue: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
