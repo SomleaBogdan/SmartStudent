@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438CD0681F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438CD0661F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.swift */; };
+		438CD0691F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438CD0671F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib */; };
 		43AA056C1F7A511A00EFF276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA056B1F7A511A00EFF276 /* AppDelegate.swift */; };
 		43AA05761F7A511A00EFF276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05741F7A511A00EFF276 /* LaunchScreen.storyboard */; };
 		43AA058E1F7A54A300EFF276 /* SMSTMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA058C1F7A54A300EFF276 /* SMSTMainTabbarViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		438CD0661F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTFormTextfieldTableViewCell.swift; sourceTree = "<group>"; };
+		438CD0671F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMSTFormTextfieldTableViewCell.xib; sourceTree = "<group>"; };
 		43AA05681F7A511A00EFF276 /* SmartStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AA056B1F7A511A00EFF276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43AA05751F7A511A00EFF276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 			children = (
 				43AA059B1F7A79A800EFF276 /* SMSTApplySmartCardViewController.swift */,
 				43AA059C1F7A79A800EFF276 /* SMSTApplySmartCardViewController.xib */,
+				438CD0661F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.swift */,
+				438CD0671F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib */,
 			);
 			path = ApplySmartCardScreen;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				43AA059E1F7A79A800EFF276 /* SMSTApplySmartCardViewController.xib in Resources */,
 				43AA059A1F7A797300EFF276 /* SMSTDiscountsViewController.xib in Resources */,
 				43AA05AA1F7A8D5B00EFF276 /* SMSTMoreTableViewCell.xib in Resources */,
+				438CD0691F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib in Resources */,
 				43AA05AE1F7A932E00EFF276 /* more.json in Resources */,
 				43AA05B41F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.xib in Resources */,
 				43AA05A61F7A7A2B00EFF276 /* SMSTMoreViewController.xib in Resources */,
@@ -342,6 +349,7 @@
 				43AA05991F7A797300EFF276 /* SMSTDiscountsViewController.swift in Sources */,
 				43AA058E1F7A54A300EFF276 /* SMSTMainTabbarViewController.swift in Sources */,
 				43AA05921F7A54ED00EFF276 /* UIColor.swift in Sources */,
+				438CD0681F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.swift in Sources */,
 				43AA05BD1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift in Sources */,
 				43AA05951F7A555600EFF276 /* SMSTHomeViewController.swift in Sources */,
 				43AA059D1F7A79A800EFF276 /* SMSTApplySmartCardViewController.swift in Sources */,
@@ -502,6 +510,7 @@
 				43AA057C1F7A511A00EFF276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

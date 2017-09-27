@@ -7,29 +7,63 @@
 //
 
 import UIKit
-
+//Nume, prenume, cnp, data nasterii, telefon, email, universitate, facultate, tara, judet, localitate, strada, nr, apartament, imagine
 class SMSTApplySmartCardViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    var dataSource: [Any] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.dataSource = [["id":"nume", "title":"Nume *", "value":"", "type":"text"],
+        ["id":"prenume", "title":"Prenume *", "value":"", "type":"text"],
+        ["id":"cnp", "title":"CNP *", "value":"", "type":"numeric"],
+        ["id":"birthdate", "title":"Data Nasterii *", "value":"", "type":"date"],
+        ["id":"telefon", "title":"Telefon *", "value":"", "type":"phone"],
+        ["id":"email", "title":"Email *", "value":"", "type":"email"],
+        ["id":"university", "title":"Universitate *", "value":"", "type":"dropdown"],
+        ["id":"faculty", "title":"Facultate *", "value":"", "type":"dropdown"],
+        ["id":"country", "title":"Tara *", "value":"", "type":"dropdown"],
+        ["id":"county", "title":"Judet *", "value":"", "type":"dropdown"],
+        ["id":"localitatea", "title":"Localitate *", "value":"", "type":"text"],
+        ["id":"strada", "title":"Strada *", "value":"", "type":"text"],
+        ["id":"nr", "title":"Nr. *", "value":"", "type":"text"],
+        ["id":"apartment", "title":"Apartament", "value":"", "type":"text"]]
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(UINib(nibName: "SMSTFormTextfieldTableViewCell", bundle: nil), forCellReuseIdentifier: "textFieldCell")
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 60
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    public func createCellAt(index: IndexPath) -> UITableViewCell? {
+        let obj = self.dataSource[index.row] as! [String: Any]
+        let type = obj["type"] as! String
+        if type == "text" || type == "numeric" || type == "date" || type == "email" || type == "dropdown" || type == "phone" {
+            //create text cell
+            let tableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "textFieldCell", for: index) as! SMSTFormTextfieldTableViewCell
+            tableViewCell.lblTitle.text = obj["title"] as? String
+            if type == "numeric" {
+                tableViewCell.tfValue.keyboardType = .numberPad
+            } else if type == "email" {
+                tableViewCell.tfValue.keyboardType = .emailAddress
+            } else if type == "phone" {
+                tableViewCell.tfValue.keyboardType = .phonePad
+            }
+        }
+        return UITableViewCell()
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
+extension SMSTApplySmartCardViewController: UITableViewDelegate {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+
+extension SMSTApplySmartCardViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataSource.count
     }
-    */
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return self.createCellAt(index: indexPath)!
+    }
 }
