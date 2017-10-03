@@ -13,9 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        var infoComponents: [String] = []
+        infoComponents.append("Name: \(Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") ?? "")")
+        infoComponents.append("Bundle Id: \(Bundle.main.bundleIdentifier ?? "")")
+        infoComponents.append("App version: \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") ?? "") (\(Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") ?? ""))")
+        infoComponents.append("")
+        if TARGET_OS_SIMULATOR != 0 {
+            infoComponents.append("Bundle path: \(Bundle.main.bundleURL.absoluteString.replacingOccurrences(of: "file:///", with: "/"))")
+            infoComponents.append("Documents path: \(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first ?? "")")
+        } else {
+            infoComponents.append("Device Name: \(UIDevice.current.name)")
+            infoComponents.append("Device Model: \(UIDevice.current.model)")
+            infoComponents.append("System Version: \(UIDevice.current.systemVersion)")
+        }
+        print("Application did finish launching \n\n\t\(infoComponents.joined(separator: "\n\t"))")
+
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         self.window?.rootViewController = SMSTMainTabbarViewController()

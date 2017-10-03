@@ -36,6 +36,8 @@
 		43AA05BA1F7AB40700EFF276 /* SMSTPartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05B81F7AB40700EFF276 /* SMSTPartnersViewController.xib */; };
 		43AA05BD1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA05BB1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift */; };
 		43AA05BE1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AA05BC1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib */; };
+		43BAAA6F1F83A8A000E3CF6E /* SMSTApplyParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA6D1F83A8A000E3CF6E /* SMSTApplyParentViewController.swift */; };
+		43BAAA701F83A8A000E3CF6E /* SMSTApplyParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA6E1F83A8A000E3CF6E /* SMSTApplyParentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		43AA05B81F7AB40700EFF276 /* SMSTPartnersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMSTPartnersViewController.xib; sourceTree = "<group>"; };
 		43AA05BB1F7AB4A100EFF276 /* SMSTAboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSTAboutUsViewController.swift; sourceTree = "<group>"; };
 		43AA05BC1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMSTAboutUsViewController.xib; sourceTree = "<group>"; };
+		43BAAA6D1F83A8A000E3CF6E /* SMSTApplyParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTApplyParentViewController.swift; sourceTree = "<group>"; };
+		43BAAA6E1F83A8A000E3CF6E /* SMSTApplyParentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSTApplyParentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				43AA059C1F7A79A800EFF276 /* SMSTApplySmartCardViewController.xib */,
 				438CD0661F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.swift */,
 				438CD0671F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib */,
+				43BAAA6D1F83A8A000E3CF6E /* SMSTApplyParentViewController.swift */,
+				43BAAA6E1F83A8A000E3CF6E /* SMSTApplyParentViewController.xib */,
 			);
 			path = ApplySmartCardScreen;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				438CD0691F7B8FD100093F62 /* SMSTFormTextfieldTableViewCell.xib in Resources */,
 				43AA05AE1F7A932E00EFF276 /* more.json in Resources */,
 				43AA05B41F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.xib in Resources */,
+				43BAAA701F83A8A000E3CF6E /* SMSTApplyParentViewController.xib in Resources */,
 				43AA05A61F7A7A2B00EFF276 /* SMSTMoreViewController.xib in Resources */,
 				43AA05961F7A555600EFF276 /* SMSTHomeViewController.xib in Resources */,
 				43AA05BE1F7AB4A100EFF276 /* SMSTAboutUsViewController.xib in Resources */,
@@ -342,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43AA05B31F7AA5A900EFF276 /* SMSTDiscountsTableViewCell.swift in Sources */,
+				43BAAA6F1F83A8A000E3CF6E /* SMSTApplyParentViewController.swift in Sources */,
 				43AA05B61F7AAF1D00EFF276 /* RSACustomCollectionViewLayout.swift in Sources */,
 				43AA05A51F7A7A2B00EFF276 /* SMSTMoreViewController.swift in Sources */,
 				43AA05A91F7A8D5B00EFF276 /* SMSTMoreTableViewCell.swift in Sources */,

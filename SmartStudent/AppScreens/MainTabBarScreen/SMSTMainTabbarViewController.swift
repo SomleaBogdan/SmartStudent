@@ -26,7 +26,7 @@ class SMSTMainTabbarViewController: UITabBarController {
                                                  selectedImage: UIImage(named: "home_icon"))
 
 
-        let applySmartCardScreen = SMSTApplySmartCardViewController(nibName: "SMSTApplySmartCardViewController", bundle: nil)
+        let applySmartCardScreen = SMSTApplyParentViewController(nibName: "SMSTApplyParentViewController", bundle: nil)
         let applyNavigation = UINavigationController(rootViewController: applySmartCardScreen)
 
         applyNavigation.tabBarItem = UITabBarItem(title: "Vreau SmartCard",

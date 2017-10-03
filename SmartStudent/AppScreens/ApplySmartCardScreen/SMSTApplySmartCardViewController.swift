@@ -14,20 +14,6 @@ class SMSTApplySmartCardViewController: UIViewController {
     var dataSource: [Any] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataSource = [["id":"nume", "title":"Nume *", "value":"", "type":"text"],
-        ["id":"prenume", "title":"Prenume *", "value":"", "type":"text"],
-        ["id":"cnp", "title":"CNP *", "value":"", "type":"numeric"],
-        ["id":"birthdate", "title":"Data Nasterii *", "value":"", "type":"date"],
-        ["id":"telefon", "title":"Telefon *", "value":"", "type":"phone"],
-        ["id":"email", "title":"Email *", "value":"", "type":"email"],
-        ["id":"university", "title":"Universitate *", "value":"", "type":"dropdown"],
-        ["id":"faculty", "title":"Facultate *", "value":"", "type":"dropdown"],
-        ["id":"country", "title":"Tara *", "value":"", "type":"dropdown"],
-        ["id":"county", "title":"Judet *", "value":"", "type":"dropdown"],
-        ["id":"localitatea", "title":"Localitate *", "value":"", "type":"text"],
-        ["id":"strada", "title":"Strada *", "value":"", "type":"text"],
-        ["id":"nr", "title":"Nr. *", "value":"", "type":"text"],
-        ["id":"apartment", "title":"Apartament", "value":"", "type":"text"]]
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "SMSTFormTextfieldTableViewCell", bundle: nil), forCellReuseIdentifier: "textFieldCell")
